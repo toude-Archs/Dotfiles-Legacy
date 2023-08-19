@@ -1,8 +1,8 @@
 # Dotfiles
 Here you find My Arch linux config
-With i3-gaps-rounded
+With BSPWM
 
-![image](https://github.com/toude-Archs/toude-archs/blob/main/aaaaaaaaaaaaaaaaaaaaaaaaz.png?raw=true)
+![image](https://github.com/toude-Archs/Dotfiles/blob/main/ScreenShots/Capture%20d%E2%80%99%C3%A9cran_2023-08-18_18-16-31.png?raw=true)
 
 # I use What ?
 
@@ -10,7 +10,7 @@ I use Kitty for terminal
 
 I use Thunar for File explorer
 
-I use Arch (DON'T UWU IS GAY)
+I use Void (DON'T UWU IS GAY)
 
 I use neofetch (don't...)
 
