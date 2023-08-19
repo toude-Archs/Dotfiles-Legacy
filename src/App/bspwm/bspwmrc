@@ -1,0 +1,63 @@
+#! /bin/sh
+
+###################################
+#
+# ▒█▀▀█ ▒█▀▀▀█ ▒█▀▀█ ▒█░░▒█ ▒█▀▄▀█ 　 　 　 
+# ▒█▀▀▄ ░▀▀▀▄▄ ▒█▄▄█ ▒█▒█▒█ ▒█▒█▒█ 　 　 　 
+# ▒█▄▄█ ▒█▄▄▄█ ▒█░░░ ▒█▄▀▄█ ▒█░░▒█ 　 　 　 
+#
+###################################
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+#bspc HDMI-A-0 -d 1 2 3 4 5 
+bspc monitor eDP -d 1 2 3 4 5
+#bpsc monitor eDP -d 0
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+#bspc config active_border_color "#E8ADAA"
+#bspc config normal_border_color "#E8ADAA" 
+#bspc config border_color "#E8ADAA"
+#bspc config borderless_monocle true
+
+#bspc rule -a '*' state=focused border=off
+#bspc rule -a '*:focused' border=on
+#bspc rule -a '*:focused' border_color "#E8ADAA"
+bspc config border_width           3
+round-borders = 1
+bspc config normal_border_color   "#ffe4e1"
+bspc config focused_border_color  "#E8ADAA"
+bspc config presel_feedback_color "#E8ADAA"  
+
+#bspc rule -a '*' state=focused border=off
+#bspc rule -a '*:focused' border=on
+#bspc rule -a '*:focused' border_color "#E8ADAA"
+#bspc config border_color "#E8ADAA"  # Couleur grise ou autre couleur de votre choix
+#bspc config border_width 3
+
+#bspc config active_border_color \#8F3A84
+#bspc config normal_border_color \#8F3A84
+
+
+exec polybar &
+exec sxhkd & 
+exec picom &
+exec setxkbmap fr 
+#exec feh --bg-scale /home/toude/Téléchargements/pxfuel.jpg &
+#exec feh --bg-scale Téléchargements/947705.png
+feh --bg-scale /home/toude/Téléchargements/void-linux-chan-original-v0-uunlg332sch91.png &
+
+
+#sxhkd &
+#feh --bg-scale /home/toude/Téléchargements/rrrr.jpg 
