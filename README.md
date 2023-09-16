@@ -10,9 +10,9 @@ I use Kitty for terminal
 
 I use Thunar for File explorer
 
-I use Void (DON'T UWU IS GAY)
+I use Void 
 
-I use neofetch (don't...)
+I use neofetch
 
 I use polybar for status bar 
 
